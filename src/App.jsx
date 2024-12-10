@@ -1,3 +1,10 @@
+import { MilkdownProvider } from "@milkdown/react";
+import { MilkdownEditor } from "./components/Editor";
+
 export default function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <MilkdownProvider>
+      <MilkdownEditor />
+    </MilkdownProvider>
+  );
 }
