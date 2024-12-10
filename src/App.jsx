@@ -1,10 +1,12 @@
-import { MilkdownProvider } from "@milkdown/react";
-import { MilkdownEditor } from "./components/Editor";
+import CrepeEditor from "./components/CrepeEditor";
 
-export default function App() {
+const App = () => {
   return (
-    <MilkdownProvider>
-      <MilkdownEditor />
-    </MilkdownProvider>
+    <>
+      <h1>Crepe Editor in React</h1>
+      <CrepeEditor />
+    </>
   );
-}
+};
+
+export default App;
