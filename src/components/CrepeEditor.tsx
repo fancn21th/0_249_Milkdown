@@ -4,6 +4,7 @@ import "@milkdown/crepe/theme/common/style.css";
 // We have some themes for you to choose
 import "@milkdown/crepe/theme/frame.css";
 import React from "react";
+import markdown from "./Sample.md?raw";
 
 export interface CrepeEditorProps {}
 
@@ -16,7 +17,7 @@ const CrepeEditor: React.FC<CrepeEditorProps> = ({}) => {
     // 创建 Crepe 实例
     const crepe = new Crepe({
       root: containerRef.current,
-      defaultValue: "Hello, Milkdown!",
+      defaultValue: markdown,
     });
 
     crepe.create().then(() => {

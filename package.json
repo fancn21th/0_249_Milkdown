@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@codemirror/state": "6.5.0",
     "@milkdown/crepe": "7.5.7",
     "@milkdown/kit": "7.5.5",
     "@milkdown/react": "7.5.0",
